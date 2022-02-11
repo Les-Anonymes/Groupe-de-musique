@@ -32,13 +32,8 @@ header.header img {
     width: 80px;
 }
 
-section.accueil {
-    height: 48vh;
-    padding: 10px;
-}
-
 h1.grand-titre {
-    font-size: 70px;
+    font-size: min(10vw,70px);
     font-weight: bold;
     margin: 20px;
     padding-top: 25px;
@@ -50,6 +45,9 @@ section.accueil {
     background-image: url("../images/partitions.jpg");
     background-position: center;
     background-size: cover;
+    max-height: 40vh;
+    height: 40vh;
+    padding: 10px;
 }
 
 /* menu de navigation */
@@ -57,19 +55,21 @@ section.accueil {
 nav.nav {
     display: flex;
     list-style: none;
-    width: 700px;
+    width: 70%;
+    max-width: 800px;
+    min-width: 300px;
     justify-content: space-between;
-    margin-left: 20px
+    margin-left: 20px;
 }
 
 nav.nav li {
-    font-size: 25px;
+    font-size: min(2.5vw,25px);
 }
 
 /* section nous découvrir */
 
 h2.second-titre {
-    font-size: 50px;
+    font-size: min(7vw,50px);
     font-weight: 200;
     margin-left: 20px;
     margin-top: 100px;
@@ -87,13 +87,13 @@ h2.second-titre::before {
 
 h3.sous-titre {
     margin-left: 20px;
-    font-size: 40px;
+    font-size: min(5vw,40px);
     font-weight: 200;
 }
 
 p.paragraphe {
-    font-size: 25px;
-    margin: 20px;   
+    font-size: min(3vw,25px);
+    margin: 20px;     
 }
 
 div.instruments img {
@@ -102,8 +102,8 @@ div.instruments img {
 }
 
 div.instruments p {
-    font-size: 25px;
-    padding: 20px;
+    font-size: min(2.5vw,25px);
+    padding: 10px;
 }
 
 div.instrument {
@@ -122,11 +122,13 @@ div.deux-img {
 
 img.style {
     max-width: 33%;
+    min-width: 200px;
+    max-width: 400px;
     height: auto;
 }
 
 div.répertoire p {
-    font-size: 20px;
+    font-size: min(3vw,20px);
     padding-left: 10px;
     padding-right: 10px;
     max-width: 66%;
@@ -137,6 +139,16 @@ div.type-musique {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    left: 0px;
+}
+
+div.type-musique2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: 0px;
 }
 
 img.icon-musique {
@@ -148,6 +160,10 @@ div.icon {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div.icon p {
+    font-size: min(3vw, 25px);
 }
 
 /* section nos prochaines dates */
@@ -175,6 +191,10 @@ p.nous-contacter {
     padding-top: 20px;
     text-align: center;
     font-size: 20px;
+}
+
+p.texte-réseau {
+    font-size: min(2.5vw,20px);
 }
 
 img.img-réseaux {
