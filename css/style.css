@@ -34,7 +34,8 @@ header.header img {
 
 h1.grand-titre {
     font-size: min(10vw,70px);
-    font-weight: 700;
+    font-weight: bold;
+    color: #3DA5D9;
     margin: 20px;
     padding-top: 25px;
     position: absolute;
