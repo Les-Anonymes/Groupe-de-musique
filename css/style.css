@@ -174,7 +174,7 @@ section.nos-dates {
 
 ul.dates {
     list-style: none;
-    font-size: 25px;
+    font-size: min(3vw, 25px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
